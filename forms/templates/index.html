@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
   </head>
   <body>
+  <div class="info">
     <form class="" action="/process" method="post">
-      Your name<input type="text" name="name" value="">
-      <input type="submit" name="" value="your name">
+      Your name<input id="user-name" type="text" name="name" value="">
+      <input type="submit" name="" value="submit">
     </form>
+  </div>
 
   </body>
 </html>
